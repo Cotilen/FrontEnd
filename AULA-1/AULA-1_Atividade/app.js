@@ -9,18 +9,19 @@ function somar() {
     const situacao = document.getElementById('situacao')
     const formulario = document.getElementById('form')
     const media = (nota1 + nota2) / 2
+    const body = document.getElementById('body')
 
 
 
     console.log(media)
     if (media >= 5) {
-        formulario.classList.remove('vermelho')
-        formulario.classList.add('verde')
+        body.classList.remove('vermelho')
+        body.classList.add('verde')
         situacao.value = 'Aprovado'
 
     } else {
         situacao.value = 'Reprovado'
-        formulario.classList.add('vermelho')
+        body.classList.add('vermelho')
     }
 }
 
