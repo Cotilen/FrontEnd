@@ -35,9 +35,9 @@ const adicionarCard = (aluno, nota) => {
 }
 
 const handleClick = () => {
-    const nomeAluno = prompt('Digite um nome para o card')
+    let nomeAluno = prompt('Digite um nome para o card').trim()
 
-    const notaAluno = prompt('Digite a nota')
+    let notaAluno = prompt('Digite a nota').trim()
 
     if (notaAluno === '' || notaAluno < 0 || notaAluno > 10 || isNaN(notaAluno) || notaAluno == null)
         alert('ERRO: Digite apenas números de 0 a 10')
