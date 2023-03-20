@@ -3,10 +3,6 @@
 // import { pesquisarCep } from "./viaCep.js"
 import { pesquisarCep } from "./postmon.js"
 
-
-
-
-
 const preencherFormulario = async function() {
 
     const cepDigitado = document.getElementById('cep').value

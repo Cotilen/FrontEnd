@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+}
+
+.map-container {}
+
+.text-container {
+    height: 417px;
+    width: 375px;
+    background-color: #F5E7D3;
+    display: grid;
+    grid-template-areas: 'estado' 'cidades';
+    grid-template-rows: 150px 1fr;
+}
+
+.text-container-estado {
+    grid-area: estado;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    gap: 23px;
+}
+
+.text-container__sigla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #FA9E27;
+    height: 100px;
+    width: 100px;
+}
+
+.text-container__descricao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container__descricao__estado {
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: 3rem;
+    color: #FA9E27;
+}
+
+.text-container__descricao__capital,
+.text-container__descricao__regiao {
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.25rem;
+    display: flex;
+}
+
+.capital,
+.regiao {
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.text-container__cidades {
+    grid-area: cidades;
+    /* background-color: blue; */
+}
+
+path {
+    fill: #ECCEA7;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+path:hover {
+    fill: #FA9E27;
+}
+
+#BR-AC:hover,
+#BR-AM:hover,
+#BR-RO:hover,
+#BR-RR:hover,
+#BR-AP:hover,
+#BR-PA:hover,
+#BR-TO:hover {
+    fill: green;
+}
+
+#BR-PR:hover,
+#BR-SC:hover,
+#BR-RS:hover {
+    fill: purple;
+}
+
+#BR-SP:hover,
+#BR-RJ:hover,
+#BR-MG:hover,
+#BR-ES:hover {
+    fill: yellow;
+}
+
+#BR-MA:hover,
+#BR-PI:hover,
+#BR-BA:hover,
+#BR-PB:hover,
+#BR-CE:hover,
+#BR-AL:hover,
+#BR-PE:hover,
+#BR-RN:hover,
+#BR-SE:hover {
+    fill: red;
+}
+
+-
