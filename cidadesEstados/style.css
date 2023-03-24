@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+:root {
+    --state__color: #FA9E27;
+    --back__color: #F5E7D3;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -27,7 +32,7 @@ body {
 .text-container {
     height: 417px;
     width: 375px;
-    background-color: #F5E7D3;
+    background-color: var(--back__color);
     display: grid;
     grid-template-areas: 'estado' 'cidades';
     grid-template-rows: 150px 1fr;
@@ -135,4 +140,24 @@ path:hover {
     fill: red;
 }
 
--
+.nem_sei {
+    overflow-y: scroll;
+}
+
+.text-cidade {
+    padding-bottom: 5px;
+    font-weight: 900;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ECCEA7;
+}
+
+::-webkit-scrollbar {
+    width: 4;
+    background: #FA9E27;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FA9E27;
+}
