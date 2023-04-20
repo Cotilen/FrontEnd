@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    place-content: center;
+    height: 150px;
+    box-shadow: 4px 4px 8px #000600;
+    font-size: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 16px;
+    gap: 16px;
+}
+
+footer {
+    display: grid;
+    place-content: center;
+    background-color: #0006;
+}
